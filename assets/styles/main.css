@@ -37,27 +37,48 @@ nav {
   position: sticky;
   top: var(--sticky-hide);
 }
+
+.grid-container{
+  display: grid;
+}
+.four-columns{
+  grid-template-columns: repeat(4, 24%);
+  grid-auto-rows: minmax(100px, 1fr);
+  gap: 1%;
+}
+.flex-columns{
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-auto-rows: minmax(100px, 1fr);
+}
+.x1024{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .news-section {
   background-color: green;
-  display: grid;
-  grid-template-columns: repeat(4, 300px);
-  grid-auto-rows: 100px;
+  justify-content: center;
+  gap: 10px;
 }
 
 .news-section * {
-  border: 2px solid dimgray;
+  border: 1px solid dimgray;
+}
+.deals{
+  margin: 0 auto;
+  background-color: rebeccapurple;
 }
 .services{
-  display: grid;
-  max-width: 1024px;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: 100px;
   gap: 10px;
 }
 .service-item{
   background-color: orangered;
   margin: 1px;
+}
+footer{
+  height: 25vh;
+  background-color: darkgray;
 }
 @media screen and (max-width: 768px) {
   .deals,
