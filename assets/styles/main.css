@@ -89,9 +89,15 @@ nav {
 
 .yellow {
   background-color: yellow;
-  height: 4vh;
+  height: 3vh;
   position: sticky;
   top: var(--sticky-hide);
+}
+.yellow a{
+  text-decoration: none;
+  font-size: 12px;
+  padding-left: 12px;
+  color: #000000;
 }
 
 .grid-container{
