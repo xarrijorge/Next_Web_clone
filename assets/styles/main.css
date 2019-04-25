@@ -1,0 +1,71 @@
+:root {
+  --sticky-hide: 10vh;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+nav {
+  background-color: #000;
+  border-bottom: 1px solid white;
+}
+.topNav {
+  background-color: red;
+  height: 5vh;
+}
+.mainNav {
+  position: sticky;
+  top: 0;
+}
+
+.headHero {
+  background-color: blue;
+  height: 50vh;
+  display: grid;
+}
+.headHero div {
+  border: 1px solid dimgray;
+  height: 100%;
+}
+.navLinks {
+  height: var(--sticky-hide);
+  background-color: dimgray;
+}
+.yellow {
+  background-color: yellow;
+  height: 4vh;
+  position: sticky;
+  top: var(--sticky-hide);
+}
+.news-section {
+  background-color: green;
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-auto-rows: 100px;
+}
+
+.news-section * {
+  border: 2px solid dimgray;
+}
+.services{
+  display: grid;
+  max-width: 1024px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 100px;
+  gap: 10px;
+}
+.service-item{
+  background-color: orangered;
+  margin: 1px;
+}
+@media screen and (max-width: 768px) {
+  .deals,
+  .news-section,
+  .headHero,
+  .services{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
+
