@@ -52,8 +52,34 @@ nav {
 }
 .navLinks {
   height: var(--sticky-hide);
-  background-color: dimgray;
+  background-color: #fff;
 }
+
+.mainNavLinks{
+  list-style: none;
+  overflow: hidden;
+  border: solid 1px;
+}
+.mainNavLinks li {
+  display: inline-block;
+}
+.mainNavLinks li a{
+  display: inline-block;
+  color: #b8b5b5;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1.2vh;
+  font-size: 13px;
+  padding: 7px 6px;
+}
+.mainNavLinks li a:hover{
+  color: #3b3a3a;
+  background-color: #fffdfd;
+}
+.mainNavRight{
+  border: solid 1px;
+}
+
 .yellow {
   background-color: yellow;
   height: 4vh;
