@@ -5,14 +5,37 @@
   box-sizing: border-box;
   margin: 0;
 }
+body{
+  font-family: 'Arimo', sans-serif;
+}
 nav {
   background-color: #000;
   border-bottom: 1px solid white;
 }
 .topNav {
-  background-color: red;
-  height: 5vh;
+  background-color: black;
+  height: 3vh;
+  list-style: none;
+  overflow: hidden;
 }
+.topNav li {
+  display: inline-block;
+}
+.topNav li a{
+  display: inline-block;
+  color: #b8b5b5;
+  text-decoration: none;
+  line-height: 1.2vh;
+  font-size: 13px;
+  padding: 7px 6px;
+}
+.topNav li a:hover{
+  color: #fff;
+}
+.topNav li a:active{
+  color: #fff;
+}
+
 .mainNav {
   position: sticky;
   top: 0;
