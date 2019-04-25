@@ -16,8 +16,12 @@ nav {
 .mainNav {
   position: sticky;
   top: 0;
-}
-
+}/* .mobileNav{ */
+/*   width:100vw; */
+/*   height: 100vh; */
+/*   background-image: linear-gradient(to right, darkpink, orangered); */
+/* } */
+/*  */
 .headHero {
   background-color: blue;
   height: 50vh;
