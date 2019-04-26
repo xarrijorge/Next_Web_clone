@@ -29,7 +29,7 @@ nav {
   height: 3vh;
   list-style: none;
   overflow: hidden;
-  margin: 0;
+  padding-left: 107px;
 }
 .topNav li {
   display: inline-block;
@@ -102,6 +102,7 @@ nav {
  display: flex;
   align-items: center;
   justify-content:space-evenly; 
+  width: 30%;
 }
 .fa-search{
   color:#c0bcbc;
@@ -134,7 +135,6 @@ nav {
   position: sticky;
   top: var(--sticky-hide);
   padding-top: 3px;
-  text-align: center;
 }
 .yellow a{
   text-decoration: none;
@@ -283,10 +283,10 @@ footer{
     height: 87px;
   }
   .mainNavLinks li a{
-    font-size: 18px;
+    font-size: 16px;
   }
 }
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px) and (max-width: 1114px){
   .navRightImg,
   .countdown-text,
   .btn-tickets,
@@ -295,9 +295,16 @@ footer{
   .logo{
     display: none;
   }
+  .topNav{
+    padding-left: 7px;
+  }
+  .mainNav{
+    padding-left: 7px;
+    border: 1px solid #000;
+  }
   .mainNavLinks{
     width: 100%;
-    border-right: 1px solid #c7c4c4; 
+    border-right: 1px solid #c7c4c4;
   }
   .mainNavRight{
     width: 60px;
@@ -307,22 +314,7 @@ footer{
     font-size: 22px;
   }
   .yellow {
-    text-align: left;
-    padding-left: 107px;
-   
-  }
-  .yellow a{font-size: 16px;}
-  .topNav{
-    padding-left: 107px;
-  }
-  .topNav li a{
-    font-size: 16px;
-  }
-  .logo{
-    height: 87px;
-  }
-  .mainNavLinks li a{
-    font-size: 18px;
+    text-align: left;  
   }
 }
 
