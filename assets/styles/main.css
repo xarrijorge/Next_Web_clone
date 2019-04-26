@@ -1,5 +1,5 @@
 :root {
-  --sticky-hide: 10vh;
+  --sticky-hide: 13vh;
 }
 * {
   box-sizing: border-box;
@@ -16,6 +16,7 @@
 .mainNav {
   position: sticky;
   top: 0;
+  color: #e6e6e6;
 }
 .navLinks{
   position: relative;
@@ -35,15 +36,22 @@ input{
 }
 label{
   display: none;
-  background-color: greenyellow;
-  margin: 30px;
-  float: right;
   position: relative;
   z-index: 99;
+  float: right;
+  margin: 10px 20px;
+  font-size: 1.9em;
+  font-weight: 100px;
 }
 input:checked ~ .mobileNav{
   left: 0;
 }
+input:checked ~ .yellow{
+  display: none;
+  width: 1px;
+  z-index: -2222;
+}
+
 .headHero {
   background-color: blue;
   height: 50vh;
@@ -59,10 +67,10 @@ input:checked ~ .mobileNav{
 }
 .yellow {
   background-color: yellow;
-  height: 4vh;
+  height: 5vh;
   position: sticky;
   top: var(--sticky-hide);
-  z-index:1; 
+  transition: all 0.5s ease;
 }
 
 .grid-container{
