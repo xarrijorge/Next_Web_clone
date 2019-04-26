@@ -88,7 +88,9 @@ nav {
   justify-content: space-around; 
   width: 30%;
 }
-
+.navRightImg{
+  display:none;
+}
 .fa-bars{
   color:#ec4545;
   font-size: 22px;
@@ -97,10 +99,12 @@ nav {
   color:#ec4545;
   font-size: 22px;
 }
-.countdowmn-text{
-  font-size: 19px;
+.countdown-text{
+  display: none;
+  font-size: 12px;
 }
 .btn-tickets{
+  display: none;
   background-color:  #0cc;;
   border-style: none;
   border-radius: 5px;
@@ -170,6 +174,13 @@ footer{
   .services{
     display: grid;
     grid-template-columns: 100%;
+  }
+}
+@media screen and (min-width: 1024px){
+  .navRightImg,
+  .countdown-text,
+  .btn-tickets{
+    display: block;
   }
 }
 
