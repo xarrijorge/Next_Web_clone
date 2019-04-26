@@ -102,7 +102,10 @@ nav {
  display: flex;
   align-items: center;
   justify-content:space-evenly; 
-  /* width: 30%; */
+}
+.fa-search{
+  color:#c0bcbc;
+ 
 }
 .fa-bars{
   color:#ec4545;
@@ -126,7 +129,7 @@ nav {
   font-weight: 700;
 }
 .yellow {
-  background-color: yellow;
+  background-color: #fd3;
   height: 3vh;
   position: sticky;
   top: var(--sticky-hide);
@@ -181,7 +184,9 @@ footer{
   height: 25vh;
   background-color: darkgray;
 }
-@media screen and (max-width: 768px) {
+
+/* adjust navbar at Breakpoint for mobile devices */
+@media only screen and (max-width: 480px){
   .deals,
   .news-section,
   .headHero,
@@ -189,21 +194,14 @@ footer{
     display: grid;
     grid-template-columns: 100%;
   }
-  .topNav{
-    display: none;
-  }
-  .mainNavLinks {
-    display: none;
-  }
-  
+  .topNav,
+  .mainNavLinks,
   .navRightImg,
   .countdown-text,
   .btn-tickets{
     display: none;
   }
-}
 
-@media only screen and (max-width: 480px){
   .mainNavRight{
    display: flex;
    justify-content: space-around;
@@ -216,31 +214,46 @@ footer{
     order: 2;
     display: inline-block;
   }
-}
-/* Brerakpoint at 768px the Main navs appear, the othe menu-items are hidded except search&titmer but the layout to desktop */
-@media screen and (min-width: 768px){
-  .navRightImg,
-  .countdown-text,
-  .btn-tickets,
-  .fa-bars{
-    display: none;
+  .yellow{
+    font-size: 11px;
   }
 }
 
-@media screen and (max-width: 1024px){
-  .topNav{
-    padding-left: 107px;
+@media screen and (min-width:480px) and (max-width: 768px) {
+   .deals,
+  .news-section,
+  .headHero,
+  .services{
+    display: grid;
+    grid-template-columns: 100%;
   }
-  /* .navRightImg,
+  .topNav,
+  .mainNavLinks,
+  .navRightImg,
   .countdown-text,
-  .btn-tickets,
-  .timer,
-  .fa-bars{
+  .btn-tickets{
     display: none;
   }
-  .mainNavLinks{
-    width: 93%;
-  }
-  .mainNavRight{width: 7%;} */
+
+.navLinks{
+  display: flex;
+  justify-content:flex-end;
 }
+  .mainNavRight{
+    width: 30%;
+    height: 100%;
+    border-left: solid 1px #c7c4c4; 
+  }
+ 
+  .yellow {
+    font-size: 14px;
+    text-align: center;
+  } 
+
+}
+
+@media only screen and (min-width:780px){
+
+}
+
 
