@@ -85,11 +85,8 @@ nav {
 .mainNavRight{
  display: flex;
   align-items: center;
-  justify-content: space-around; 
+  justify-content:space-evenly; 
   width: 30%;
-}
-.navRightImg{
-  display:none;
 }
 .fa-bars{
   color:#ec4545;
@@ -100,16 +97,17 @@ nav {
   font-size: 22px;
 }
 .countdown-text{
-  display: none;
   font-size: 12px;
 }
 .btn-tickets{
-  display: none;
   background-color:  #0cc;;
   border-style: none;
   border-radius: 5px;
   color: #ffffff;
-  padding: 8px;
+  height: 38px;
+  width: 93px;
+  font-size: 11px;
+  font-weight: 700;
 }
 .yellow {
   background-color: yellow;
@@ -176,11 +174,11 @@ footer{
     grid-template-columns: 100%;
   }
 }
-@media screen and (min-width: 1024px){
+@media screen and (max-width: 1024px){
   .navRightImg,
   .countdown-text,
   .btn-tickets{
-    display: block;
+    display: none;
   }
 }
 
