@@ -24,11 +24,30 @@
 .mobileNav{
   width:100vw;
   height: 99.99vh;
-  background-image: linear-gradient(105deg, deeppink, orangered);
+  background-image: linear-gradient(135deg, #D30A88, orangered);
   position: fixed;
   top: 0;
   left: 99.99%;
   transition: all 0.5s ease;
+  grid-template-rows:40px 50px auto;
+}
+.mobileNav >*:not(span){
+  border-top: 1px solid #fff;
+}
+.social-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;;
+}
+.fab, .fas{
+  margin: 0 9px;
+}
+.other-menus{
+  grid-template-columns: repeat( 2, 50% );
+  grid-auto-rows:1fr;
+}
+.tnw-sites{
+  grid-column-start: 2;
 }
 
 input{
@@ -37,11 +56,11 @@ input{
 label{
   display: none;
   position: relative;
+  top: -5vh;
+  left: 5vw;
   z-index: 99;
   float: right;
   margin: 10px 20px;
-  font-size: 1.9em;
-  font-weight: 100px;
 }
 input:checked ~ .mobileNav{
   left: 0;
