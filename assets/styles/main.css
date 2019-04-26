@@ -173,12 +173,36 @@ footer{
     display: grid;
     grid-template-columns: 100%;
   }
-}
-@media screen and (max-width: 1024px){
+  .mainNavLinks  li {
+    display: none;
+  }
   .navRightImg,
   .countdown-text,
   .btn-tickets{
     display: none;
   }
+}
+/* Brerakpoint at 768px the Main navs appear, the othe menu-items are hidded except search&titmer but the layout to desktop */
+@media screen and (min-width: 768px){
+  .navRightImg,
+  .countdown-text,
+  .btn-tickets,
+  .fa-bars{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  /* .navRightImg,
+  .countdown-text,
+  .btn-tickets,
+  .timer,
+  .fa-bars{
+    display: none;
+  }
+  .mainNavLinks{
+    width: 93%;
+  }
+  .mainNavRight{width: 7%;} */
 }
 
