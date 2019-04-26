@@ -84,14 +84,35 @@ nav {
 }
 .mainNavRight{
  display: flex;
-
+  align-items: center;
+  justify-content: space-around; 
+  width: 30%;
 }
 
+.fa-bars{
+  color:#ec4545;
+  font-size: 22px;
+}
+.timer{
+  color:#ec4545;
+  font-size: 22px;
+}
+.countdowmn-text{
+  font-size: 19px;
+}
+.btn-tickets{
+  background-color:  #0cc;;
+  border-style: none;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 8px;
+}
 .yellow {
   background-color: yellow;
   height: 3vh;
   position: sticky;
   top: var(--sticky-hide);
+  padding-top: 3px;
 }
 .yellow a{
   text-decoration: none;
