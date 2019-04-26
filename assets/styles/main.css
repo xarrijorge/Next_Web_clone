@@ -9,14 +9,27 @@ body{
   font-family: 'Arimo', sans-serif;
 }
 nav {
-  background-color: #000;
+  /* background-color: #000; */
   border-bottom: 1px solid white;
+  background-color: #fffdfd;
+}
+.logo{
+    width: 106px;
+    height: 48px;
+    background-color: #f42;
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 33;
+    
 }
 .topNav {
   background-color: black;
   height: 3vh;
   list-style: none;
   overflow: hidden;
+  margin: 0;
 }
 .topNav li {
   display: inline-block;
@@ -39,6 +52,7 @@ nav {
 .mainNav {
   position: sticky;
   top: 0;
+  padding-left: 107px;
 }
 
 .headHero {
@@ -62,21 +76,23 @@ nav {
   list-style: none;
   overflow: hidden;
   height: 100%;
-  width: 65%;
+  width: 70%;
   border-right: solid 1px #c7c4c4;
 }
 .mainNavLinks li {
   display: inline-block;
   padding-top: 9px;
 }
+.mainNav ul {
+  padding: 0;
+}
 .mainNavLinks li a{
-  display: inline-block;
   color: #b8b5b5;
   text-decoration: none;
   text-transform: uppercase;
   line-height: 1.2vh;
-  font-size: 16px;
-  padding: 7px 6px;
+  font-size: 14px;
+  padding: 7px 3px;
 }
 .mainNavLinks li a:hover{
   color: #3b3a3a;
@@ -86,7 +102,7 @@ nav {
  display: flex;
   align-items: center;
   justify-content:space-evenly; 
-  width: 30%;
+  /* width: 30%; */
 }
 .fa-bars{
   color:#ec4545;
@@ -173,13 +189,32 @@ footer{
     display: grid;
     grid-template-columns: 100%;
   }
-  .mainNavLinks  li {
+  .topNav{
     display: none;
   }
+  .mainNavLinks {
+    display: none;
+  }
+  
   .navRightImg,
   .countdown-text,
   .btn-tickets{
     display: none;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .mainNavRight{
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+  }
+  .fa-bars{
+    order: 3;
+  }
+  .fa-search{
+    order: 2;
+    display: inline-block;
   }
 }
 /* Brerakpoint at 768px the Main navs appear, the othe menu-items are hidded except search&titmer but the layout to desktop */
@@ -193,6 +228,9 @@ footer{
 }
 
 @media screen and (max-width: 1024px){
+  .topNav{
+    padding-left: 107px;
+  }
   /* .navRightImg,
   .countdown-text,
   .btn-tickets,
