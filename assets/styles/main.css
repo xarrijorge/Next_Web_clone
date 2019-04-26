@@ -252,8 +252,14 @@ footer{
 
 }
 
-@media only screen and (min-width:780px) and (max-width: 1024px{
-  
+@media only screen and (min-width:780px) and (max-width: 1024px){
+  .topNav,
+  .mainNavLinks,
+  .navRightImg,
+  .countdown-text,
+  .btn-tickets{
+    display: none;
+  }
 }
 
 
