@@ -134,10 +134,11 @@ nav {
   position: sticky;
   top: var(--sticky-hide);
   padding-top: 3px;
+  text-align: center;
 }
 .yellow a{
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   padding-left: 12px;
   color: #000000;
 }
@@ -214,7 +215,7 @@ footer{
     order: 2;
     display: inline-block;
   }
-  .yellow{
+  .yellow a{
     font-size: 11px;
   }
 }
@@ -244,16 +245,10 @@ footer{
     height: 100%;
     border-left: solid 1px #c7c4c4; 
   }
- 
-  .yellow {
-    font-size: 14px;
-    text-align: center;
-  } 
 
 }
 
 @media only screen and (min-width:780px) and (max-width: 1024px){
-  .topNav,
   .navRightImg,
   .countdown-text,
   .btn-tickets,
@@ -261,7 +256,75 @@ footer{
   .fa-bars{
     display: none;
   }
-  
+  .mainNavLinks{
+    width: 100%;
+    border-right: 1px solid #c7c4c4; 
+  }
+  .mainNavRight{
+    width: 60px;
+    height: 100%;
+  }
+  .fa-search{
+    font-size: 22px;
+  }
+  .yellow {
+    text-align: left;
+    padding-left: 107px;
+   
+  }
+  .yellow a{font-size: 16px;}
+  .topNav{
+    padding-left: 107px;
+  }
+  .topNav li a{
+    font-size: 16px;
+  }
+  .logo{
+    height: 87px;
+  }
+  .mainNavLinks li a{
+    font-size: 18px;
+  }
 }
+@media only screen and (min-width: 1024px){
+  .navRightImg,
+  .countdown-text,
+  .btn-tickets,
+  .timer,
+  .fa-bars,
+  .logo{
+    display: none;
+  }
+  .mainNavLinks{
+    width: 100%;
+    border-right: 1px solid #c7c4c4; 
+  }
+  .mainNavRight{
+    width: 60px;
+    height: 100%;
+  }
+  .fa-search{
+    font-size: 22px;
+  }
+  .yellow {
+    text-align: left;
+    padding-left: 107px;
+   
+  }
+  .yellow a{font-size: 16px;}
+  .topNav{
+    padding-left: 107px;
+  }
+  .topNav li a{
+    font-size: 16px;
+  }
+  .logo{
+    height: 87px;
+  }
+  .mainNavLinks li a{
+    font-size: 18px;
+  }
+}
+
 
 
