@@ -55,13 +55,27 @@ nav {
 }
 
 .headHero {
-  background-color: blue;
-  height: 50vh;
   display: grid;
+  height: 60vh;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-template-rows: repeat(2, 50%);
+  grid-gap: 4px;
+  padding: 3px;;
 }
-.headHero div {
-  border: 1px solid dimgray;
-  height: 100%;
+.cover-header-hero{
+  grid-column: 1 / span 2;
+  grid-row:  1 / span 2;
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/moonday-morning-bitcoin-blockchain-cryptocurrency-hacks-ethereum-796x448.jpg');
+  background-repeat: no-repeat;
+}
+.small-header-hero {
+  background-repeat: no-repeat;
+}
+#small-headline-1{
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Robot-rights-2-796x417.png');
+}
+#small-headline-2{
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Untitled-design36-796x417.png');
 }
 .navLinks {
   height: var(--sticky-hide);
