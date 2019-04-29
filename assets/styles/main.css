@@ -60,7 +60,8 @@ nav {
   grid-template-columns: repeat(3, 33.3%);
   grid-template-rows: repeat(2, 50%);
   grid-gap: 4px;
-  padding: 3px;;
+  padding: 4px;
+  margin: 4px;
 }
 .cover-header-hero{
   grid-column: 1 / span 2;
@@ -72,12 +73,18 @@ nav {
 }
 .small-header-hero {
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
 }
 #small-headline-1{
-  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Robot-rights-2-796x417.png') 50% no-repeat;
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Robot-rights-2-796x417.png');
 }
 #small-headline-2{
-  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Untitled-design36-796x417.png') 50% no-repeat;
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Untitled-design36-796x417.png');
+}
+.cover-gradient{
+  background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png') 0 no-repeat;
+  background-size: cover;
 }
 .navLinks {
   height: var(--sticky-hide);
