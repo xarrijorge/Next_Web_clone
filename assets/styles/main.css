@@ -54,44 +54,6 @@ nav {
   padding-left: 107px;
 }
 
-.headHero {
-  display: grid;
-  height: 60vh;
-  grid-template-columns: repeat(3, 33.3%);
-  grid-template-rows: repeat(2, 50%);
-  grid-gap: 4px;
-  padding: 4px;
-  margin: 4px;
-}
-.cover-header-hero{
-  grid-column: 1 / span 2;
-  grid-row:  1 / span 2;
-  /* background-color: #000; */
-  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/moonday-morning-bitcoin-blockchain-cryptocurrency-hacks-ethereum-796x448.jpg') 50% no-repeat;
-  background-size: cover;
-  /* mix-blend-mode: darken; */
-}
-.small-header-hero {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
-}
-#small-headline-1{
-  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Robot-rights-2-796x417.png');
-}
-#small-headline-2{
-  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Untitled-design36-796x417.png');
-}
-.cover-gradient{
-  background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png') 0 0 no-repeat;
-  background-size: cover;
-  bottom: 0;
-  left:0;
-  position: absolute;
-  right: 0;
-  top:0;
-
-}
 .navLinks {
   height: var(--sticky-hide);
   background-color: #fffdfd;
@@ -180,6 +142,45 @@ nav {
   transition: all 0.5s ease;
 }
 
+.headHero {
+  display: grid;
+  height: 60vh;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-template-rows: repeat(2, 50%);
+  grid-gap: 4px;
+  padding: 4px;
+  margin: 4px;
+}
+.cover-header-hero{
+  grid-column: 1 / span 2;
+  grid-row:  1 / span 2;
+  /* background-color: #000; */
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/moonday-morning-bitcoin-blockchain-cryptocurrency-hacks-ethereum-796x448.jpg') 50% no-repeat;
+  background-size: cover;
+  /* mix-blend-mode: darken; */
+}
+.small-header-hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+#small-headline-1{
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Robot-rights-2-796x417.png');
+}
+#small-headline-2{
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Untitled-design36-796x417.png');
+}
+.cover-gradient{
+  background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png') 0 0 no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left:0;
+  position: absolute;
+  right: 0;
+  top:0;
+
+}
+
 .grid-container{
   display: grid;
 }
@@ -203,12 +204,18 @@ nav {
   gap: 10px;
 }
 
+.advert{
+  width: 970px;
+  height: 250px;
+  margin: 30px auto;
+}
 .news-section * {
   border: 1px solid dimgray;
 }
 .deals{
   margin: 0 auto;
-  background-color: rebeccapurple;
+  border: 1px solid #000;
+  
 }
 .services{
   margin: 0 auto;
