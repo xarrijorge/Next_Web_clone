@@ -69,7 +69,7 @@ nav {
   /* background-color: #000; */
   background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/moonday-morning-bitcoin-blockchain-cryptocurrency-hacks-ethereum-796x448.jpg') 50% no-repeat;
   background-size: cover;
-  
+  /* mix-blend-mode: darken; */
 }
 .small-header-hero {
   background-repeat: no-repeat;
@@ -83,8 +83,14 @@ nav {
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Untitled-design36-796x417.png');
 }
 .cover-gradient{
-  background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png') 0 no-repeat;
+  background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png') 0 0 no-repeat;
   background-size: cover;
+  bottom: 0;
+  left:0;
+  position: absolute;
+  right: 0;
+  top:0;
+
 }
 .navLinks {
   height: var(--sticky-hide);
