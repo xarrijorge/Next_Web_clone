@@ -211,6 +211,7 @@ nav {
 }
 .flex-wrapper{
   /* border: 1px solid #000; */
+  vertical-align: baseline;
 }
 .flex-row{
   display: flex;
@@ -219,7 +220,7 @@ nav {
 }
 .flex-item{
   width: 25%;
-  height: 15vw;
+  height: 13vw;
   flex-basis: 25%;
   padding: 5px;
 }
@@ -237,6 +238,7 @@ nav {
   line-height: 20px;
   color: #aaa;
   margin-top: 10px;
+  text-align: justify;
 }
 #news-img-1{
   background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/australia-asic-cryptocurrency-ico-regulation-sanctions-bitcoin-480x270.jpg') 50% no-repeat;
@@ -266,8 +268,8 @@ nav {
   background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/port-of-rotterdam-blockchain-energy-platform-cryptocurrency-port-logisitcs-decentraization-480x270.png') 50% no-repeat;
   background-size: cover;
 }
-#news-img-4{
-  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/yahoo_1200-516x270.png') 50% no-repeat;
+#news-img-8{
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/header-image-soho-wireless-516x270.png') 50% no-repeat;
   background-size: cover;
 }
 .latest-news{
