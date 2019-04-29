@@ -3,7 +3,6 @@
 }
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
   margin: 0;
 }
 body{
@@ -14,15 +13,15 @@ nav {
   background-color: #fffdfd;
 }
 .logo{
-  width: 106px;
-  height: 48px;
-  background-color: #f42;
-  background: linear-gradient(to bottom right, #c09, #f42 85%);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 33;
-
+    width: 106px;
+    height: 48px;
+    background-color: #f42;
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 33;
+    
 }
 .topNav {
   background-color: black;
@@ -50,15 +49,15 @@ nav {
 }
 
 .mainNav {
-  color: #e6e6e6;
   position: sticky;
   top: 0;
   padding-left: 107px;
 }
+
 .headHero {
   background-color: blue;
-  display: grid;
   height: 50vh;
+  display: grid;
 }
 .headHero div {
   border: 1px solid dimgray;
@@ -142,7 +141,6 @@ nav {
   font-size: 14px;
   padding-left: 12px;
   color: #000000;
-  background-color: dimgray;
   height: var(--sticky-hide);
 }
 .yellow {
@@ -157,23 +155,23 @@ nav {
   display: grid;
 }
 .four-columns{
-  gap: 1%;
   grid-template-columns: repeat(4, 24%);
   grid-auto-rows: minmax(100px, 1fr);
+  gap: 1%;
 }
 .flex-columns{
-  grid-auto-rows: minmax(100px, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-auto-rows: minmax(100px, 1fr);
 }
 .x1024{
-  margin: 0 auto;
   max-width: 1024px;
+  margin: 0 auto;
 }
 
 .news-section {
   background-color: green;
-  gap: 10px;
   justify-content: center;
+  gap: 10px;
 }
 
 .news-section * {
@@ -198,10 +196,19 @@ footer{
 
 /* adjust navbar at Breakpoint for mobile devices */
 @media only screen and (max-width: 480px){
-  body{
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  .deals,
+  .news-section,
+  .headHero,
+  .services{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .topNav,
+  .mainNavLinks,
+  .navRightImg,
+  .countdown-text,
+  .btn-tickets{
+    display: none;
   }
   .mainNavRight{
     display: flex;
@@ -250,93 +257,7 @@ footer{
     height: 100%;
     border-left: solid 1px #c7c4c4; 
   }
-
-  label{
-    display: block;
-  }
 }
-/* Mobile Navigation styles start here */
-.mobileNav{
-  width:100vw;
-  height: 99.99vh;
-  background: linear-gradient(to bottom right,#c09,#f42 85%);
-  position: absolute;
-  top: 0;
-  left: 130%;
-  transition: all 0.5s ease;
-  grid-template-rows:40px 50px auto;
-}
-.mobileNav >*:not(span){
-  border-top: 1px solid #fff;
-}
-.mobileNav ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  line-height: 26px;
-}
-.social-menu{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;;
-  padding: 0;
-}
-
-.tnw-sites{
-  grid-column-start: 2;
-}
-
-input{
-  display: none;
-}
-label{
-  position: relative;
-  top: -12vh;
-  right: 15vw;
-  z-index: 99;
-  float: right;
-  margin: 10px 20px;
-}
-label span{
-  width: 20px;
-  height: 2px;
-  background-color: #ec4646;
-  margin: 3px 0;
-  transform-origin: left;
-  transition: all 0.3s ease;
-}
-
-
-input:checked ~ .mobileNav{
-  left: 0;
-}
-input:checked ~ .yellow{
-  display: none;
-  width: 1px;
-  z-index: -2222;
-}
-input:checked ~ label span{
- background-color: #fff; 
-}
-input:checked ~ label span:first-child{
-  transform: rotate(45deg) translate(-3px);
-}
-input:checked ~ label span:last-child{
-  transform: rotate(310deg) translate(-3px);
-}
-input:checked ~ label span:nth-child(2){
-  visibility: hidden;
-}
-
-.other-menus{
-  padding: 20px;
-  padding-top: 30px;
-  font-weight: 100;
-  grid-template-columns: repeat( 2, 50% );
-  grid-auto-rows:minmax(100px,1fr);
-  grid-auto-flow: dense;
-}
-
 @media only screen and (min-width:780px) and (max-width: 1024px){
   .navRightImg,
   .countdown-text,
@@ -360,7 +281,6 @@ input:checked ~ label span:nth-child(2){
   .yellow {
     text-align: left;
     padding-left: 107px;
-
   }
   .yellow a{font-size: 16px;}
   .topNav{
@@ -375,7 +295,7 @@ input:checked ~ label span:nth-child(2){
   .mainNavLinks li a{
     font-size: 16px;
   }
-
+}
   @media only screen and (min-width: 1024px) and (max-width: 1114px){
     .navRightImg,
     .countdown-text,
