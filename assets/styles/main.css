@@ -228,6 +228,13 @@ nav {
   width:100%;
   height:135px;
 }
+.deals-item-img{
+  width:100%;
+  height:196px;
+}
+/* .deal-span{
+  text-decoration: line-through;
+} */
 .flex-item h4{
   margin-top: 10px;
   color: #000;
@@ -235,7 +242,7 @@ nav {
 }
 .flex-item p{
   font-size: 13px;
-  line-height: 20px;
+  /* line-height: 20px; */
   color: #aaa;
   margin-top: 10px;
   text-align: justify;
@@ -254,6 +261,38 @@ nav {
 }
 #news-img-4{
   background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/yahoo_1200-516x270.png') 50% no-repeat;
+  background-size: cover;
+}
+#news-img-5{
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Untitled-design-5-1-516x270.png') 50% no-repeat;
+  background-size: cover;
+}
+#news-img-6{
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/u3V3LgK-540x270.jpg') 50% no-repeat;
+  background-size: cover;
+}
+#news-img-7{
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/port-of-rotterdam-blockchain-energy-platform-cryptocurrency-port-logisitcs-decentraization-480x270.png') 50% no-repeat;
+  background-size: cover;
+}
+#news-img-8{
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/header-image-soho-wireless-516x270.png') 50% no-repeat;
+  background-size: cover;
+}
+#deals-img-1{
+  background: url('https://cdnp3.stackassets.com/c3fa05eb56e173b5b1a4d2b41a5263a90c1b5df6/store/d6b394d335bb9beddfe96b0f4c3467d42c9581dfd0f6081d96d50ecc402c/sale_18296_primary_image.jpg') 50% no-repeat;
+  background-size: cover;
+}
+#deals-img-2{
+  background: url('https://cdnp2.stackassets.com/0bf6c7812ea5d941c14c3252c028745a45b33f5f/store/b310e945b24f50272e1af9a54b81b7cfbd4a95e55b69e56d4ea536dc37d1/sale_18113_primary_image.jpg') 50% no-repeat;
+  background-size: cover;
+}
+#deals-img-3{
+  background: url('https://cdnp1.stackassets.com/7f21e3c9c6c83af0897f2f9678d0e2254a33a33d/store/93437ca270a267d3a14e711f8de516edb58c2065bfcce1fca72a831c8a56/sale_10872_primary_image.jpg') 50% no-repeat;
+  background-size: cover;
+}
+#deals-img-4{
+  background: url('https://cdnp0.stackassets.com/bc2e84f4448a1ec3b95161b6ee2ab93bff08b581/store/b85f80bbd0788c70233a35aaeb011144ce59b9ec8f29a4e10527d1e29e51/sale_18881_primary_image.jpg') 50% no-repeat;
   background-size: cover;
 }
 #news-img-5{
@@ -302,7 +341,7 @@ nav {
 }
 footer{
   height: 25vh;
-  background-color: darkgray;
+  background-color: rgb(7, 2, 2);
 }
 
 /* adjust navbar at Breakpoint for mobile devices */
