@@ -209,6 +209,28 @@ nav {
   height: 250px;
   margin: 30px auto;
 }
+.flex-wrapper{
+  border: 1px solid #000;
+}
+.flex-row{
+  display: flex;
+  border: 1px solid #000;
+}
+.flex-item{
+  
+}
+.latest-news{
+  color: #f42;
+  font-size: 28px;
+  font-weight: 700;
+  padding: 12px 10px;
+  cursor: pointer;
+  display: block;
+}
+.flex-wrapper a{
+  text-decoration: none;
+}
+
 .news-section * {
   border: 1px solid dimgray;
 }
