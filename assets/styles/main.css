@@ -220,9 +220,11 @@ nav {
 }
 .flex-item{
   width: 25%;
-  height: 13vw;
+  height: 15vw;
   flex-basis: 25%;
   padding: 5px;
+  line-height: 1.3em;
+  margin-bottom: 26px;
 }
 .flex-item-img{
   width:100%;
@@ -341,7 +343,14 @@ nav {
 }
 footer{
   height: 25vh;
-  background-color: rgb(7, 2, 2);
+}
+.footer-top{
+  background-color: #131313;
+  height: 50%;
+}
+.footer-bottom{
+  background-color: #000000;
+  height: 50%;
 }
 
 /* adjust navbar at Breakpoint for mobile devices */
