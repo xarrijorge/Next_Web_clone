@@ -3,7 +3,7 @@
 }
 * {
   box-sizing: border-box;
- font-family: sans-serif;
+  font-family: sans-serif;
   margin: 0;
 }
 body{
@@ -14,15 +14,15 @@ nav {
   background-color: #fffdfd;
 }
 .logo{
-    width: 106px;
-    height: 48px;
-    background-color: #f42;
-    background: linear-gradient(to bottom right, #c09, #f42 85%);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 33;
-    
+  width: 106px;
+  height: 48px;
+  background-color: #f42;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 33;
+
 }
 .topNav {
   background-color: black;
@@ -99,14 +99,15 @@ nav {
   background-color: #fffdfd;
 }
 .mainNavRight{
- display: flex;
+  display: flex;
   align-items: center;
-  justify-content:space-evenly; 
+  justify-content:space-between; 
   width: 30%;
+  padding: 0 10px;
 }
 .fa-search{
   color:#c0bcbc;
- 
+
 }
 .fa-bars{
   color:#ec4545;
@@ -197,47 +198,37 @@ footer{
 
 /* adjust navbar at Breakpoint for mobile devices */
 @media only screen and (max-width: 480px){
-  @media screen and (max-width: 768px) {
-    .topNav{
-      display: none;
-    }
-    .deals,
-    .news-section,
-    .headHero,
-    .services{
-      display: grid;
-      grid-template-columns: 100%;
-    }
-    .topNav,
-    .mainNavLinks,
-    .navRightImg,
-    .countdown-text,
-    .btn-tickets{
-      display: none;
-    }
-
-    .mainNavRight{
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-    }
-    .fa-bars{
-      order: 3;
-    }
-    .fa-search{
-      order: 2;
-      display: inline-block;
-    }
-    .yellow a{
-      font-size: 11px;
-    }
+  body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .mainNavRight{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .fa-bars{
+    order: 3;
+  }
+  .fa-search{
+    order: 2;
+    display: inline-block;
+  }
+  .yellow a{
+    font-size: 11px;
+  }
+  label{
+    display: block;
   }
 }
 
 @media screen and (min-width:480px) and (max-width: 768px) {
-   .deals,
+  .deals,
   .news-section,
   .headHero,
+  .four-columns,
+  .flex-columns,
   .services{
     display: grid;
     grid-template-columns: 100%;
@@ -250,10 +241,10 @@ footer{
     display: none;
   }
 
-.navLinks{
-  display: flex;
-  justify-content:flex-end;
-}
+  .navLinks{
+    display: flex;
+    justify-content:flex-end;
+  }
   .mainNavRight{
     width: 30%;
     height: 100%;
@@ -271,7 +262,7 @@ footer{
   background: linear-gradient(to bottom right,#c09,#f42 85%);
   position: absolute;
   top: 0;
-  left: 99.99%;
+  left: 130%;
   transition: all 0.5s ease;
   grid-template-rows:40px 50px auto;
 }
@@ -300,7 +291,8 @@ input{
 }
 label{
   position: relative;
-  left: 5vw;
+  top: -12vh;
+  right: 15vw;
   z-index: 99;
   float: right;
   margin: 10px 20px;
@@ -308,8 +300,7 @@ label{
 label span{
   width: 20px;
   height: 2px;
-  background-color: #fff;
-  display: block;
+  background-color: #ec4646;
   margin: 3px 0;
   transform-origin: left;
   transition: all 0.3s ease;
@@ -323,6 +314,9 @@ input:checked ~ .yellow{
   display: none;
   width: 1px;
   z-index: -2222;
+}
+input:checked ~ label span{
+ background-color: #fff; 
 }
 input:checked ~ label span:first-child{
   transform: rotate(45deg) translate(-3px);
@@ -348,6 +342,7 @@ input:checked ~ label span:nth-child(2){
   .countdown-text,
   .btn-tickets,
   .timer,
+  label,
   .fa-bars{
     display: none;
   }
@@ -365,7 +360,7 @@ input:checked ~ label span:nth-child(2){
   .yellow {
     text-align: left;
     padding-left: 107px;
-   
+
   }
   .yellow a{font-size: 16px;}
   .topNav{
@@ -381,34 +376,35 @@ input:checked ~ label span:nth-child(2){
     font-size: 16px;
   }
 
-@media only screen and (min-width: 1024px) and (max-width: 1114px){
-  .navRightImg,
-  .countdown-text,
-  .btn-tickets,
-  .timer,
-  .fa-bars,
-  .logo{
-    display: none;
+  @media only screen and (min-width: 1024px) and (max-width: 1114px){
+    .navRightImg,
+    .countdown-text,
+    .btn-tickets,
+    .timer,
+    .fa-bars,
+    label,
+    .logo{
+      display: none;
+    }
+    .topNav{
+      padding-left: 7px;
+    }
+    .mainNav{
+      padding-left: 7px;
+      border: 1px solid #000;
+    }
+    .mainNavLinks{
+      width: 100%;
+      border-right: 1px solid #c7c4c4;
+    }
+    .mainNavRight{
+      width: 80px;
+      height: 100%;
+    }
+    .fa-search{
+      font-size: 22px;
+    }
+    .yellow {
+      text-align: left;  
+    }
   }
-  .topNav{
-    padding-left: 7px;
-  }
-  .mainNav{
-    padding-left: 7px;
-    border: 1px solid #000;
-  }
-  .mainNavLinks{
-    width: 100%;
-    border-right: 1px solid #c7c4c4;
-  }
-  .mainNavRight{
-    width: 60px;
-    height: 100%;
-  }
-  .fa-search{
-    font-size: 22px;
-  }
-  .yellow {
-    text-align: left;  
-  }
-}
