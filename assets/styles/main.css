@@ -358,9 +358,10 @@ nav {
 }
 .service-title {
   color: orangered;
+  margin: 15px 0;
 }
 .big-section {
-  height: 300px;
+  height: 275px;
   background-color: dimgray;
   background-image: url('https://abs.green/files/pics/csm_Heydar-Aliyev-Center-6-cropped_web_v2_efbc456ba1.jpg');
   display: flex;
@@ -374,13 +375,19 @@ nav {
   background-color: cyan;
   display: grid;
   grid-template-columns: 60% 1fr;
-  margin: 1px 0;
-  padding: 0;
+  margin: 2px 0;
   color: orangered;
+  padding-left: 10px;
 }
 .small-section img {
   width: 100px;
   margin-left: auto;
+}
+.small-section .title {
+  font-size: 0.9em;
+}
+.small-section > div {
+  padding-top: 10px;
 }
 .service-item ul {
   list-style-type: none;
