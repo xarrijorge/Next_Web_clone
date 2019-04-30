@@ -349,6 +349,35 @@ footer{
 .footer-top{
   background-color: #131313;
   height: 70%;
+  padding: 30px;
+}
+.social-icons{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+
+}
+.social-icons i {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  margin: 0px 0.3%;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+.footer-nav-links{
+  color: #aaa;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 30px;
+}
+.footer-nav-links span {
+  margin: 0px 5px;
+  cursor: pointer;
 }
 .footer-bottom{
   color: #aaa;
