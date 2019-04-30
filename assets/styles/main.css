@@ -348,11 +348,15 @@ footer{
 }
 .footer-top{
   background-color: #131313;
-  height: 50%;
+  height: 70%;
 }
 .footer-bottom{
+  color: #aaa;
   background-color: #000000;
-  height: 50%;
+  height: 30%;
+  text-align: center;
+  padding-top: 9px;
+  
 }
 
 /* adjust navbar at Breakpoint for mobile devices */
@@ -424,7 +428,6 @@ footer{
   .countdown-text,
   .btn-tickets,
   .timer,
-  label,
   .fa-bars{
     display: none;
   }
@@ -463,7 +466,6 @@ footer{
     .btn-tickets,
     .timer,
     .fa-bars,
-    label,
     .logo{
       display: none;
     }
@@ -487,5 +489,10 @@ footer{
     }
     .yellow {
       text-align: left;  
+    }
+  }
+  @media only screen and (min-width: 1024px){
+    .fa-bars{
+      display: none;
     }
   }
