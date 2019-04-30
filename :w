@@ -8,9 +8,9 @@
 }
 body {
   font-family: 'Arimo', sans-serif;
+  max-width: 99.98vw;
 }
 nav {
-  max-width: 99vw;
   border-bottom: 1px solid white;
   background-color: #fffdfd;
 }
@@ -28,7 +28,6 @@ nav {
   background-color: black;
   height: 3vh;
   list-style: none;
-  overflow: hidden;
   padding-left: 107px;
 }
 .topNav li {
@@ -519,7 +518,6 @@ footer {
     display: grid;
     grid-template-columns: 100%;
     grid-auto-rows: minmax(100px, 1fr);
-    position: relative;
   }
   .x1024 {
     max-width: 94vw;
@@ -533,11 +531,10 @@ footer {
   .btn-tickets {
     display: none;
   }
-  .mainNavRight {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
+
+  /*   justify-content: space-between; */
+  /*   width: 100%; */
+  /* } */
   .cover-header-hero {
     grid-column: 1;
     position: relative;
@@ -588,11 +585,11 @@ footer {
     display: flex;
     justify-content: flex-end;
   }
-  .mainNavRight {
-    width: 30%;
-    height: 100%;
-    border-left: solid 1px #c7c4c4;
-  }
+  /*  .mainNavRight { */
+  /*     width: 30%; */
+  /*     height: 100%; */
+  /*     border-left: solid 1px #c7c4c4; */
+  /*   } */
 }
 @media only screen and (min-width: 780px) and (max-width: 1024px) {
   .navRightImg,
@@ -606,10 +603,10 @@ footer {
     width: 100%;
     border-right: 1px solid #c7c4c4;
   }
-  .mainNavRight {
-    width: 60px;
-    height: 100%;
-  }
+  /* .mainNavRight { */
+  /*   width: 60px; */
+  /*   height: 100%; */
+  /* } */
   .fa-search {
     font-size: 22px;
   }
@@ -653,10 +650,10 @@ footer {
     width: 100%;
     border-right: 1px solid #c7c4c4;
   }
-  .mainNavRight {
-    width: 80px;
-    height: 100%;
-  }
+  /* .mainNavRight { */
+  /*   width: 80px; */
+  /*   height: 100%; */
+  /* } */
   .fa-search {
     font-size: 22px;
   }
