@@ -385,7 +385,12 @@ footer{
   height: 30%;
   text-align: center;
   padding-top: 9px;
-  
+  text-align: center;
+}
+.footer-bottom span img {
+  display: inline-block;
+  height: 9px;
+  margin-right: 1px;
 }
 
 /* adjust navbar at Breakpoint for mobile devices */
