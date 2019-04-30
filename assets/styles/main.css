@@ -198,18 +198,59 @@ nav {
 }
 
 .news-section {
-  background-color: green;
-  justify-content: center;
+  position: relative;
   gap: 10px;
 }
 
+.news-section img {
+  float: left;
+  width: 65px;
+  margin: 10px;
+}
+
+.logo-section {
+  background-color: #fff4f2;
+  height: 100px;
+}
+.icon-box {
+  margin: 15px;
+  font-size: 0.9em;
+}
+.icon-box .fas {
+  margin: 0 10px;
+  color: #000;
+}
+.deal-item {
+  background-color: #fffaf8;
+  color: dimgray;
+}
+.deal-item .title {
+  background-color: orangered;
+  color: #fff;
+  height: 45px;
+  line-height: 45px;
+}
+.item-footer {
+  border-top: 1px solid orangered;
+  padding: 20px;
+  font-size: 0.75em;
+}
+.fiscal {
+  margin: 5px 5px 0 5px;
+  color: #000;
+}
+.sub-fiscal {
+  color: gray;
+  margin: 0;
+  padding: 0;
+}
+
 .advert {
-  width: 970px;
   height: 250px;
   margin: 30px auto;
+  width: 970px;
 }
 .flex-wrapper {
-  /* border: 1px solid #000; */
   vertical-align: baseline;
   margin-bottom: 9em;
 }
@@ -235,7 +276,7 @@ nav {
   height: 196px;
 }
 /* .deal-span{
-  text-decoration: line-through;
+text-decoration: line-through;
 } */
 .flex-item h4 {
   margin-top: 8px;
@@ -341,9 +382,6 @@ nav {
   text-decoration: none;
 }
 
-.news-section * {
-  border: 1px solid dimgray;
-}
 .deals {
   margin: 0 auto;
   border: 1px solid #000;
@@ -351,6 +389,18 @@ nav {
 .services {
   margin: 0 auto;
   gap: 10px;
+}
+.services-title {
+  height: 100px;
+  padding: 0;
+  color: orangered;
+  grid-template-columns: 60% 1fr;
+  padding: 20px 0;
+  line-height: 50px;
+}
+.services-title > p {
+  margin-left: auto;
+  margin-right: 20px;
 }
 .service-item {
   /* background-color: orangered; */
@@ -372,9 +422,9 @@ nav {
 }
 
 .small-section {
-  background-color: cyan;
+  background-color: #fff4f2;
   display: grid;
-  grid-template-columns: 60% 1fr;
+  grid-template-columns: 1fr 30%;
   margin: 2px 0;
   color: orangered;
   padding-left: 10px;
