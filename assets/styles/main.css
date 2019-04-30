@@ -218,6 +218,7 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  
 }
 .flex-item{
   width: 25%;
@@ -225,6 +226,7 @@ nav {
   flex-basis: 25%;
   padding: 5px;
   line-height: 1.3em;
+  margin-bottom: 5em;
 }
 .flex-item-img{
   width:100%;
@@ -238,7 +240,7 @@ nav {
   text-decoration: line-through;
 } */
 .flex-item h4{
-  margin-top: 10px;
+  margin-top: 8px;
   color: #000;
   font-weight: bold;
 }
