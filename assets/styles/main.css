@@ -263,6 +263,7 @@ nav {
   flex-wrap: wrap;
 }
 .flex-item {
+  position: relative;
   width: 25%;
   height: 15vw;
   flex-basis: 25%;
@@ -288,7 +289,6 @@ text-decoration: line-through;
 }
 .flex-item p {
   font-size: 13px;
-  /* line-height: 20px; */
   color: #aaa;
   margin-top: 10px;
   text-align: justify;
@@ -466,8 +466,7 @@ footer {
   padding-top: 9px;
 }
 .social-icons {
-  width: 50%;
-  margin: auto;
+  width: 100%;
   text-align: center;
 }
 .social-icons i {
@@ -482,7 +481,7 @@ footer {
 }
 .footer-nav-links {
   color: #aaa;
-  width: 50%;
+  width: 100%;
   margin: auto;
   text-align: center;
   font-size: 12px;
@@ -499,6 +498,7 @@ footer {
   text-align: center;
   padding-top: 9px;
   text-align: center;
+  font-size: 13px;
 }
 .footer-bottom span img {
   display: inline-block;
@@ -525,6 +525,7 @@ footer {
     max-width: 94vw;
     margin: 0 20px;
   }
+
   .topNav,
   .mainNavLinks,
   .navRightImg,
@@ -542,6 +543,20 @@ footer {
     grid-column: 1;
     position: relative;
     grid-row: 1;
+  }
+  .flex-item{
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .flex-item-img{
+    float: left;
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+  }
+  .flex-item p{
+    margin-left: 85px;
+    margin-top: 0;
   }
 
   .fa-bars {
