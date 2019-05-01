@@ -601,9 +601,7 @@ footer {
     grid-template-columns: 100%;
     grid-auto-rows: minmax(100px, 1fr);
   }
-  .small-header-hero{
-    background-color: #cbdf5f
-  }
+  
   .x1024 {
     max-width: 90vw;
     margin: 0 20px;
@@ -645,6 +643,17 @@ footer {
   }
 }
 @media only screen and (min-width: 780px) and (max-width: 1024px) {
+
+  .deals,
+  .news-section,
+  .four-columns,
+  .flex-columns,
+  .grid-container {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: minmax(100px, 1fr);
+  }
   .navRightImg,
   .countdown-text,
   .btn-tickets,
@@ -678,14 +687,17 @@ footer {
     font-size: 16px;
   }
   .logo {
-    height: 87px;
+    height: 48px;
   }
   .mainNavLinks li a {
     font-size: 16px;
   }
   .flex-item{
     flex-basis: 33.33%;
-    margin: 8px;
+     margin-top: 85px;
+  }
+  .flex-item p{
+    margin: 0;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1114px) {
@@ -694,6 +706,7 @@ footer {
   .btn-tickets,
   .timer,
   .fa-bars,
+  .advert
   .logo {
     display: none;
   }
