@@ -25,6 +25,9 @@ nav {
   left: 0;
   z-index: 33;
 }
+.logo img{
+  width: 80px;
+}
 .topNav {
   background-color: black;
   height: 3vh;
@@ -511,6 +514,11 @@ footer {
 
 /* adjust navbar at Breakpoint for mobile devices */
 @media only screen and (max-width: 480px) {
+ 
+  .logo img{
+    padding-top: 16px;
+    padding-left: 7px;
+  }
   .deals,
   .news-section,
   .headHero,
@@ -541,7 +549,10 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: 100%;
+    padding-top: 8px;
   }
+
   .cover-header-hero {
     grid-column: 1;
     position: relative;
@@ -570,7 +581,7 @@ footer {
     display: inline-block;
   }
   .yellow a {
-    font-size: 11px;
+    font-size: 9px;
   }
   label {
     display: block;
@@ -585,10 +596,13 @@ footer {
   .flex-columns,
   .grid-container,
   .services {
-    max-width: 90vw;
+    /* max-width: 90vw; */
     display: grid;
     grid-template-columns: 100%;
     grid-auto-rows: minmax(100px, 1fr);
+  }
+  .small-header-hero{
+    background-color: #cbdf5f
   }
   .x1024 {
     max-width: 90vw;
@@ -598,7 +612,8 @@ footer {
   .mainNavLinks,
   .navRightImg,
   .countdown-text,
-  .btn-tickets {
+  .btn-tickets,
+  .advert {
     display: none;
   }
 
@@ -607,9 +622,26 @@ footer {
     justify-content: flex-end;
   }
   .mainNavRight {
-    width: 30%;
+    min-width: 35vw;
+    max-width: 32vw;
     height: 100%;
     border-left: solid 1px #c7c4c4;
+  }
+
+  .flex-item{
+    flex-basis: 100%;
+    max-width: 100%;
+    margin: 8px;
+  }
+  .flex-item-img{
+    float: left;
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+  }
+  .flex-item p{
+    margin-left: 85px;
+    margin-top: 0;
   }
 }
 @media only screen and (min-width: 780px) and (max-width: 1024px) {
@@ -617,6 +649,7 @@ footer {
   .countdown-text,
   .btn-tickets,
   .timer,
+  .advert,
   .fa-bars {
     display: none;
   }
@@ -649,6 +682,10 @@ footer {
   }
   .mainNavLinks li a {
     font-size: 16px;
+  }
+  .flex-item{
+    flex-basis: 33.33%;
+    margin: 8px;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1114px) {
