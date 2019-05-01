@@ -13,7 +13,6 @@ nav {
   max-width: 99vw;
   border-bottom: 1px solid white;
   background-color: #fffdfd;
-  overflow: hidden;
   z-index: 9;
 }
 .logo {
@@ -30,7 +29,7 @@ nav {
   background-color: black;
   height: 3vh;
   list-style: none;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding-left: 107px;
 }
 .topNav li {
@@ -55,7 +54,7 @@ nav {
   position: sticky;
   top: 0;
   padding-left: 107px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .navLinks {
@@ -131,6 +130,7 @@ nav {
   top: var(--sticky-hide);
   padding-top: 3px;
   box-shadow: 0 16px 48px #00000026;
+  z-index: 99;
 }
 .yellow a {
   text-decoration: none;
@@ -206,7 +206,7 @@ nav {
 }
 
 .news-section {
-  /* position: relative; */
+  position: relative;
   gap: 10px;
 }
 
@@ -544,7 +544,7 @@ footer {
   }
   .cover-header-hero {
     grid-column: 1;
-    /* position: relative; */
+    position: relative;
     grid-row: 1;
   }
   .flex-item{
