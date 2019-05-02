@@ -161,6 +161,7 @@ nav {
   grid-gap: 4px;
   padding: 4px;
   margin: 4px;
+  cursor: pointer;
 }
 .cover-header-hero {
   grid-column: 1 / span 2;
