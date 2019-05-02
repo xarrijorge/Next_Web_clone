@@ -11,15 +11,13 @@ body {
   font-family: 'Arimo', sans-serif;
 }
 
-*:hover{
-  cursor: pointer;
-}
 nav {
   max-width: 99vw;
   border-bottom: 1px solid white;
   background-color: #fffdfd;
   z-index: 9;
 }
+
 .logo {
   width: 106px;
   height: 48px;
@@ -35,7 +33,7 @@ nav {
 }
 .topNav {
   background-color: black;
-  height: 3vh;
+  height: 4vh;
   list-style: none;
   /* overflow: hidden; */
   padding-left: 107px;
@@ -62,7 +60,6 @@ nav {
   position: sticky;
   top: 0;
   padding-left: 107px;
-  /* overflow: hidden; */
 }
 
 .navLinks {
