@@ -169,9 +169,7 @@ nav {
   background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/moonday-morning-bitcoin-blockchain-cryptocurrency-hacks-ethereum-796x448.jpg')
     50% no-repeat;
   background-size: cover;
-  position: relative;
-  
-  
+  position: relative;  
 }
 .small-header-hero {
   background-repeat: no-repeat;
@@ -643,6 +641,11 @@ footer {
   .flex-item p{
     margin-left: 85px;
     margin-top: 0;
+  }
+  .cover-header-hero {
+    grid-column: 1;
+    position: relative;
+    grid-row: 1;
   }
 }
 @media only screen and (min-width: 780px) and (max-width: 1024px) {
