@@ -35,7 +35,6 @@ nav {
   background-color: black;
   height: 4vh;
   list-style: none;
-  /* overflow: hidden; */
   padding-left: 107px;
 }
 .topNav li {
@@ -621,7 +620,6 @@ footer {
   .flex-columns,
   .grid-container,
   .services {
-    /* max-width: 90vw; */
     display: grid;
     grid-template-columns: 100%;
     grid-auto-rows: minmax(100px, 1fr);
