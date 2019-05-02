@@ -10,7 +10,7 @@ body {
   font-family: 'Arimo', sans-serif;
 }
 
-a:hover, nav span{
+a:hover, nav span, li{
   cursor: pointer;
 }
 nav {
