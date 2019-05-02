@@ -237,6 +237,7 @@ nav {
 .deal-item {
   background-color: #fffaf8;
   color: dimgray;
+  cursor: pointer;
 }
 .deal-item .title {
   background-color: orangered;
@@ -283,14 +284,14 @@ nav {
 .flex-item-img {
   width: 100%;
   height: 135px;
+  cursor: pointer;
 }
 .deals-item-img {
   width: 100%;
   height: 196px;
+  cursor: pointer;
 }
-/* .deal-span{
-text-decoration: line-through;
-} */
+
 .flex-item h4 {
   margin-top: 8px;
   color: #000;
@@ -301,6 +302,20 @@ text-decoration: line-through;
   color: #aaa;
   margin-top: 10px;
   text-align: justify;
+}
+.flex-item h4 a{
+  color: #000;
+}
+.flex-item h4 a:hover{
+  color: #f42;
+  text-decoration: underline;
+}
+.flex-item p a{
+  color: #aaa;
+}
+.flex-item p a:hover{
+  color: #929090;
+  text-decoration: none;
 }
 #news-img-1 {
   background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/australia-asic-cryptocurrency-ico-regulation-sanctions-bitcoin-480x270.jpg')
@@ -415,12 +430,13 @@ text-decoration: line-through;
   margin-right: 20px;
 }
 .service-item {
-  /* background-color: orangered; */
+  cursor: pointer;
   margin: 1px;
 }
 .service-title {
   color: orangered;
   margin: 15px 0;
+  cursor: pointer;
 }
 .big-section {
   height: 275px;
@@ -500,6 +516,13 @@ footer {
   margin: 0px 5px;
   cursor: pointer;
 }
+.footer-nav-links span a{
+  text-decoration: none;
+  color: #aaa;
+}
+.footer-nav-links span a:hover{
+  color: #ffffff;
+}
 .footer-bottom {
   color: #aaa;
   background-color: #000000;
@@ -513,6 +536,7 @@ footer {
   display: inline-block;
   height: 9px;
   margin-right: 1px;
+  cursor: pointer;
 }
 
 /* adjust navbar at Breakpoint for mobile devices */
