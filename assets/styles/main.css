@@ -6,11 +6,12 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: 'Arimo', sans-serif;
 }
 
-a:hover, nav span, li{
+*:hover{
   cursor: pointer;
 }
 nav {
