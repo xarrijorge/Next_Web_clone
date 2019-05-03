@@ -1,0 +1,767 @@
+:root {
+  --sticky-hide: 7vh;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arimo', sans-serif;
+}
+
+nav {
+  max-width: 99vw;
+  border-bottom: 1px solid white;
+  background-color: #fffdfd;
+  z-index: 9;
+}
+
+.logo {
+  width: 106px;
+  height: 48px;
+  background-color: #f42;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 33;
+}
+.logo img{
+  width: 80px;
+}
+.topNav {
+  background-color: black;
+  height: 4vh;
+  list-style: none;
+  padding-left: 107px;
+}
+.topNav li {
+  display: inline-block;
+}
+.topNav li a {
+  display: inline-block;
+  color: #b8b5b5;
+  text-decoration: none;
+  line-height: 1.2vh;
+  font-size: 13px;
+  padding: 7px 6px;
+}
+.topNav li a:hover {
+  color: #fff;
+}
+.topNav li a:active {
+  color: #fff;
+}
+
+.mainNav {
+  position: sticky;
+  top: 0;
+  padding-left: 107px;
+}
+
+.navLinks {
+  height: var(--sticky-hide);
+  background-color: #fffdfd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.mainNavLinks {
+  list-style: none;
+  overflow: hidden;
+  height: 100%;
+  width: 60%;
+  border-right: solid 1px #c7c4c4;
+}
+.mainNavLinks li {
+  display: inline-block;
+  padding-top: 9px;
+}
+.mainNav ul {
+  padding: 0;
+}
+.mainNavLinks li a {
+  color: #b8b5b5;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1.2vh;
+  font-size: 14px;
+  padding: 7px 3px;
+}
+.mainNavLinks li a:hover {
+  color: #3b3a3a;
+  background-color: #fffdfd;
+}
+.mainNavRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  padding: 0 10px;
+}
+.fa-search {
+  color: #c0bcbc;
+}
+.fa-bars {
+  color: #ec4545;
+  font-size: 22px;
+}
+.timer {
+  color: #ec4545;
+  font-size: 22px;
+}
+.countdown-text {
+  font-size: 12px;
+}
+.btn-tickets {
+  background-color: #0cc;
+  border-style: none;
+  border-radius: 5px;
+  color: #ffffff;
+  height: 38px;
+  width: 93px;
+  font-size: 11px;
+  font-weight: 700;
+}
+.yellow {
+  background-color: #fd3;
+  height: 3vh;
+  position: sticky;
+  top: var(--sticky-hide);
+  padding-top: 3px;
+  box-shadow: 0 16px 48px #00000026;
+  z-index: 99;
+}
+.yellow a {
+  text-decoration: none;
+  font-size: 14px;
+  padding-left: 12px;
+  color: #000000;
+  height: var(--sticky-hide);
+}
+.yellow {
+  background-color: yellow;
+  height: 5vh;
+  position: sticky;
+  top: var(--sticky-hide);
+  transition: all 0.5s ease;
+}
+
+.headHero {
+  display: grid;
+  max-width: 100vw;
+  min-height: 60vh;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-auto-rows: 50%;
+  grid-gap: 4px;
+  padding: 4px;
+  margin: 4px;
+  cursor: pointer;
+}
+.cover-header-hero {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/moonday-morning-bitcoin-blockchain-cryptocurrency-hacks-ethereum-796x448.jpg')
+    50% no-repeat;
+  background-size: cover;
+  position: relative;  
+}
+.small-header-hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+#small-headline-1 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Robot-rights-2-796x417.png');
+}
+#small-headline-2 {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Untitled-design36-796x417.png');
+}
+.cover-gradient {
+  position: absolute;
+  background: linear-gradient(to bottom right, orangered, black 85%);
+  opacity: 0.6;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.grid-container {
+  display: grid;
+}
+.four-columns {
+  grid-template-columns: repeat(4, 24%);
+  grid-auto-rows: minmax(100px, 1fr);
+  gap: 1%;
+}
+.flex-columns {
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  grid-auto-rows: minmax(100px, 1fr);
+}
+.x1024 {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.news-section {
+  position: relative;
+  gap: 10px;
+}
+
+.news-section img {
+  float: left;
+  width: 65px;
+  margin: 10px;
+}
+
+.logo-section {
+  background-color: #fff4f2;
+  height: 100px;
+}
+.icon-box {
+  margin: 15px;
+  font-size: 0.9em;
+}
+.icon-box .fas {
+  margin: 0 10px;
+  color: #000;
+}
+.deal-item {
+  background-color: #fffaf8;
+  color: dimgray;
+  cursor: pointer;
+}
+.deal-item .title {
+  background-color: orangered;
+  color: #fff;
+  height: 45px;
+  line-height: 45px;
+}
+.item-footer {
+  border-top: 1px solid orangered;
+  padding: 20px;
+  font-size: 0.75em;
+}
+.fiscal {
+  margin: 5px 5px 0 5px;
+  color: #000;
+}
+.sub-fiscal {
+  color: gray;
+  margin: 0;
+  padding: 0;
+}
+
+.advert {
+  height: 250px;
+  margin: 30px auto;
+  width: 970px;
+}
+.flex-wrapper {
+  margin-bottom: 9em;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flex-item {
+  width: 25%;
+  height: 15vw;
+  flex-basis: 25%;
+  padding: 5px;
+  line-height: 1.3em;
+  margin-bottom: 5em;
+}
+.flex-item-img {
+  width: 100%;
+  height: 135px;
+  cursor: pointer;
+}
+.deals-item-img {
+  width: 100%;
+  height: 196px;
+  cursor: pointer;
+}
+
+.flex-item h4 {
+  margin-top: 8px;
+  color: #000;
+  font-weight: bold;
+}
+.flex-item p {
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 10px;
+  text-align: justify;
+}
+.flex-item h4 a{
+  color: #000;
+}
+.flex-item h4 a:hover{
+  color: #f42;
+  text-decoration: underline;
+}
+.flex-item p a{
+  color: #aaa;
+}
+.flex-item p a:hover{
+  color: #929090;
+  text-decoration: none;
+}
+#news-img-1 {
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/australia-asic-cryptocurrency-ico-regulation-sanctions-bitcoin-480x270.jpg')
+    50% no-repeat;
+  background-size: cover;
+}
+#news-img-2 {
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/satoshitreasure-1-480x270.png')
+    50% no-repeat;
+  background-size: cover;
+}
+#news-img-3 {
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Untitled-design-21-516x270.jpg')
+    50% no-repeat;
+  background-size: cover;
+}
+#news-img-4 {
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/yahoo_1200-516x270.png')
+    50% no-repeat;
+  background-size: cover;
+}
+#news-img-5 {
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Untitled-design-5-1-516x270.png')
+    50% no-repeat;
+  background-size: cover;
+}
+#news-img-6 {
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/u3V3LgK-540x270.jpg')
+    50% no-repeat;
+  background-size: cover;
+}
+#news-img-7 {
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/port-of-rotterdam-blockchain-energy-platform-cryptocurrency-port-logisitcs-decentraization-480x270.png')
+    50% no-repeat;
+  background-size: cover;
+}
+#news-img-8 {
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/header-image-soho-wireless-516x270.png')
+    50% no-repeat;
+  background-size: cover;
+}
+#deals-img-1 {
+  background: url('https://cdnp3.stackassets.com/c3fa05eb56e173b5b1a4d2b41a5263a90c1b5df6/store/d6b394d335bb9beddfe96b0f4c3467d42c9581dfd0f6081d96d50ecc402c/sale_18296_primary_image.jpg')
+    50% no-repeat;
+  background-size: cover;
+}
+#deals-img-2 {
+  background: url('https://cdnp2.stackassets.com/0bf6c7812ea5d941c14c3252c028745a45b33f5f/store/b310e945b24f50272e1af9a54b81b7cfbd4a95e55b69e56d4ea536dc37d1/sale_18113_primary_image.jpg')
+    50% no-repeat;
+  background-size: cover;
+}
+#deals-img-3 {
+  background: url('https://cdnp1.stackassets.com/7f21e3c9c6c83af0897f2f9678d0e2254a33a33d/store/93437ca270a267d3a14e711f8de516edb58c2065bfcce1fca72a831c8a56/sale_10872_primary_image.jpg')
+    50% no-repeat;
+  background-size: cover;
+}
+#deals-img-4 {
+  background: url('https://cdnp0.stackassets.com/bc2e84f4448a1ec3b95161b6ee2ab93bff08b581/store/b85f80bbd0788c70233a35aaeb011144ce59b9ec8f29a4e10527d1e29e51/sale_18881_primary_image.jpg')
+    50% no-repeat;
+  background-size: cover;
+}
+#deals-img-5 {
+  background: url('https://cdnp0.stackassets.com/d2b7ed9e0d5ff759b1971309f8897460be9c1c17/store/56470590cddbd25d52b059e156e855e6b221723e17d04f94f9c93ee3f29c/sale_18661_primary_image.jpg')
+    50% no-repeat;
+  background-size: cover;
+}
+#deals-img-6 {
+  background: url('https://cdnp2.stackassets.com/4140ca602e1df829731b51f3d44ae0eb72bb0510/store/5d7b240a3caea73d7288edc202bf46004c819e7b54b7a7d750bd580f8c51/sale_17183_primary_image.jpg')
+    50% no-repeat;
+  background-size: cover;
+}
+#deals-img-7 {
+  background: url('https://cdnp0.stackassets.com/12edc27d6d90190aee2c6d2498e09c073e51d761/store/b7c818d0762b98656aa9d78da2c4c42b6a77a47107aba9c5ff94e86e96d7/sale_3150_image.jpg')
+    50% no-repeat;
+  background-size: cover;
+}
+#deals-img-8 {
+  background: url('https://cdnp3.stackassets.com/d272d065e8025834a90576741d5ba6209466d39c/store/3db6b2710f144d7253142a8d2606cc025c92fa30a511dcf1e2cc2dc53b97/sale_17608_primary_image.jpg')
+    50% no-repeat;
+  background-size: cover;
+}
+.latest-news {
+  color: #f42;
+  font-size: 28px;
+  font-weight: 700;
+  padding: 12px 10px;
+  cursor: pointer;
+  display: block;
+}
+.flex-wrapper a {
+  text-decoration: none;
+}
+
+.deals {
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+.services {
+  margin: 0 auto;
+  gap: 10px;
+}
+.services-title {
+  height: 100px;
+  padding: 0;
+  color: orangered;
+  grid-template-columns: 60% 1fr;
+  padding: 20px 0;
+  line-height: 50px;
+}
+.services-title > p {
+  margin-left: auto;
+  margin-right: 20px;
+}
+.service-item {
+  cursor: pointer;
+  margin: 1px;
+}
+.service-title {
+  color: orangered;
+  margin: 15px 0;
+  cursor: pointer;
+}
+.big-section {
+  height: 275px;
+  background-color: dimgray;
+  background-image: url('https://abs.green/files/pics/csm_Heydar-Aliyev-Center-6-cropped_web_v2_efbc456ba1.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 10px;
+  color: #fff;
+}
+
+.small-section {
+  background-color: #fff4f2;
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  margin: 2px 0;
+  color: orangered;
+  padding-left: 10px;
+}
+.small-section img {
+  width: 100px;
+  margin-left: auto;
+}
+.small-section .title {
+  font-size: 0.9em;
+}
+.small-section > div {
+  padding-top: 10px;
+}
+.service-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+.service-item li {
+  border-bottom: 1px solid #e6e6e6;
+  line-height: 30px;
+  color: gray;
+}
+.service-item ul li::before {
+  content: '\2022';
+  color: orangered;
+  font-size: 1.3em;
+  margin-right: 10px;
+}
+footer {
+  height: 25vh;
+}
+.footer-top {
+  background-color: #131313;
+  height: 70%;
+  padding-top: 9px;
+}
+.social-icons {
+  width: 100%;
+  text-align: center;
+}
+.social-icons i {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  margin: 0px 0.3%;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+.footer-nav-links {
+  color: #aaa;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 30px;
+}
+.footer-nav-links span {
+  margin: 0px 5px;
+  cursor: pointer;
+}
+.footer-nav-links span a{
+  text-decoration: none;
+  color: #aaa;
+}
+.footer-nav-links span a:hover{
+  color: #ffffff;
+}
+.footer-bottom {
+  color: #aaa;
+  background-color: #000000;
+  height: 30%;
+  text-align: center;
+  padding-top: 9px;
+  text-align: center;
+  font-size: 13px;
+}
+.footer-bottom span img {
+  display: inline-block;
+  height: 9px;
+  margin-right: 1px;
+  cursor: pointer;
+}
+
+/* adjust navbar at Breakpoint for mobile devices */
+@media only screen and (max-width: 480px) {
+ 
+  .logo img{
+    padding-top: 16px;
+    padding-left: 7px;
+  }
+  .deals,
+  .news-section,
+  .headHero,
+  .four-columns,
+  .flex-columns,
+  .grid-container,
+  .services {
+    max-width: 94vw;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(100px, 1fr);
+    position: relative;
+  }
+  .x1024 {
+    max-width: 94vw;
+    margin: 0 20px;
+  }
+
+  .topNav,
+  .mainNavLinks,
+  .navRightImg,
+  .countdown-text,
+  .advert,
+  .btn-tickets {
+    display: none;
+  }
+  .mainNavRight {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding-top: 8px;
+  }
+
+  .cover-header-hero {
+    grid-column: 1;
+    position: relative;
+    grid-row: 1;
+  }
+  .flex-item{
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .flex-item-img{
+    float: left;
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+  }
+  .flex-item p{
+    margin-left: 85px;
+    margin-top: 0;
+  }
+
+  .fa-bars {
+    order: 3;
+  }
+  .fa-search {
+    order: 2;
+    display: inline-block;
+  }
+  .yellow a {
+    font-size: 9px;
+  }
+  label {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .deals,
+  .news-section,
+  .headHero,
+  .four-columns,
+  .flex-columns,
+  .grid-container,
+  .services {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(100px, 1fr);
+  }
+  
+  .x1024 {
+    max-width: 90vw;
+    margin: 0 20px;
+  }
+  .topNav,
+  .mainNavLinks,
+  .navRightImg,
+  .countdown-text,
+  .btn-tickets,
+  .advert {
+    display: none;
+  }
+
+  .navLinks {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .mainNavRight {
+    min-width: 35vw;
+    max-width: 32vw;
+    height: 100%;
+    border-left: solid 1px #c7c4c4;
+  }
+
+  .flex-item{
+    flex-basis: 100%;
+    max-width: 100%;
+    margin: 8px;
+  }
+  .flex-item-img{
+    float: left;
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+  }
+  .flex-item p{
+    margin-left: 85px;
+    margin-top: 0;
+  }
+  .cover-header-hero {
+    grid-column: 1;
+    position: relative;
+    grid-row: 1;
+  }
+}
+@media only screen and (min-width: 780px) and (max-width: 1024px) {
+
+  .deals,
+  .news-section,
+  .four-columns,
+  .flex-columns,
+  .grid-container {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: minmax(100px, 1fr);
+  }
+  .navRightImg,
+  .countdown-text,
+  .btn-tickets,
+  .timer,
+  .advert,
+  .fa-bars {
+    display: none;
+  }
+  .mainNavLinks {
+    width: 100%;
+    border-right: 1px solid #c7c4c4;
+  }
+  .mainNavRight {
+    width: 60px;
+    height: 100%;
+  }
+  .fa-search {
+    font-size: 22px;
+  }
+  .yellow {
+    text-align: left;
+    padding-left: 107px;
+  }
+  .yellow a {
+    font-size: 16px;
+  }
+  .topNav {
+    padding-left: 107px;
+  }
+  .topNav li a {
+    font-size: 16px;
+  }
+  .logo {
+    height: 48px;
+  }
+  .mainNavLinks li a {
+    font-size: 16px;
+  }
+  .flex-item{
+    flex-basis: 33.33%;
+     margin-top: 85px;
+  }
+  .flex-item p{
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1114px) {
+  .navRightImg,
+  .countdown-text,
+  .btn-tickets,
+  .timer,
+  .fa-bars,
+  .advert
+  .logo {
+    display: none;
+  }
+  .topNav {
+    padding-left: 7px;
+  }
+  .mainNav {
+    padding-left: 7px;
+    border: 1px solid #000;
+  }
+  .mainNavLinks {
+    width: 100%;
+    border-right: 1px solid #c7c4c4;
+  }
+  .mainNavRight {
+    width: 80px;
+    height: 100%;
+  }
+  .fa-search {
+    font-size: 22px;
+  }
+  .yellow {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .fa-bars {
+    display: none;
+  }
+}
